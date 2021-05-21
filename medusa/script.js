@@ -59,7 +59,7 @@ class Scene {
   }
 
   setCamera() {
-    const fov = 180 * (2 * Math.atan(this.H / 2 / perspective)) / Math.PI;
+    const fov = 145 * (2 * Math.atan(this.H / 2 / perspective)) / Math.PI;
 
     this.camera = new THREE.PerspectiveCamera(fov, this.W / this.H, 1, 10000);
     this.camera.position.set(0, 0, perspective);
